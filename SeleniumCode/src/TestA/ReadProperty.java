@@ -50,7 +50,7 @@ public class ReadProperty {
 		driver.findElement(By.xpath((prop.getProperty("password_xpath")))).sendKeys(prop.getProperty("password"));
 		driver.findElement(By.xpath((prop.getProperty("login_xpath")))).click();
 		
-		System.out.println("have a good day");
+		System.out.println("have a good day123");
 			
 		}
 		

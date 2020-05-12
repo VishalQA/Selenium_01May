@@ -1,4 +1,4 @@
-package TestA;
+package selenium_framework;
 
 
 

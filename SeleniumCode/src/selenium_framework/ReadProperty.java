@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -20,7 +21,7 @@ public class ReadProperty {
 
 		
 		Properties prop = new Properties();
-		FileInputStream ip = new FileInputStream("C:\\Users\\jaju_v\\git\\2020\\SeleniumCode\\src\\TestA\\config.properties");
+		FileInputStream ip = new FileInputStream("C:\\Users\\jaju_v\\git\\2020\\SeleniumCode\\src\\selenium_framework\\config.properties");
 		prop.load(ip);
 		
 		System.out.println(prop.getProperty("username"));
@@ -51,8 +52,23 @@ public class ReadProperty {
 		driver.findElement(By.xpath((prop.getProperty("login_xpath")))).click();
 		
 		System.out.println("have a good day123");
-			
+		
+//		driver.findElement(By.xpath((prop.getProperty("Admin_xpath")))).click();
+//		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//		driver.findElement(By.xpath((prop.getProperty("About_xpath")))).click();
+//		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//		
+//		driver.findElement(By.xpath((prop.getProperty("About_close_xpath")))).click();
+		
+		driver.findElement(By.xpath((prop.getProperty("PIM_Xpath")))).click();
+		driver.findElement(By.xpath((prop.getProperty("AddEmployee_xpath")))).click();
+		driver.findElement(By.xpath((prop.getProperty("FirstName_xpath")))).sendKeys(prop.getProperty("FirstName"));
+		driver.findElement(By.xpath((prop.getProperty("LastName_xpath")))).sendKeys(prop.getProperty("LastName"));
+		driver.findElement(By.xpath((prop.getProperty("ChooseFile_xpath")))).sendKeys(prop.getProperty("Filename"));
+		driver.findElement(By.xpath((prop.getProperty("save_xpath")))).click();
+		
 		}
+	
 		
 		
 	}

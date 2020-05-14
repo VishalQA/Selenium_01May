@@ -12,6 +12,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class ReadProperty {
 	static WebDriver driver;
@@ -65,6 +66,18 @@ public class ReadProperty {
 		driver.findElement(By.xpath((prop.getProperty("FirstName_xpath")))).sendKeys(prop.getProperty("FirstName"));
 		driver.findElement(By.xpath((prop.getProperty("LastName_xpath")))).sendKeys(prop.getProperty("LastName"));
 		driver.findElement(By.xpath((prop.getProperty("ChooseFile_xpath")))).sendKeys(prop.getProperty("Filename"));
+		
+		  System.out.println(driver.findElement(By.xpath((prop.getProperty("credentialscheck_xpath")))).isSelected());  
+		  driver.findElement(By.xpath((prop.getProperty("credentialscheck_xpath")))).click();
+		  
+		  driver.findElement(By.xpath((prop.getProperty("newusername_xpath")))).sendKeys(prop.getProperty("newusername"));
+		  driver.findElement(By.xpath((prop.getProperty("newpassword_xpath")))).sendKeys(prop.getProperty("newpassword"));
+		  driver.findElement(By.xpath((prop.getProperty("confirmpassword_xpath")))).sendKeys(prop.getProperty("confirmpassword"));
+		  
+//		  Select dropdown = new Select(driver.findElement(By.xpath("status_xpath")));  
+//		    dropdown.selectByVisibleText("Enabled");  
+		  
+		  
 		driver.findElement(By.xpath((prop.getProperty("save_xpath")))).click();
 		
 		}

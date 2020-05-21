@@ -114,7 +114,7 @@ public class ReadProperty {
     	
 		
 		
-		String date = "13-May-2030";
+		String date = "10-May-2030";
 		String dateArr[]= date.split("-");
 		String day = dateArr[0];
 		String month = dateArr[1];

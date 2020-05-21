@@ -202,6 +202,8 @@ public class ReadProperty {
 				
 				driver.findElement(By.xpath(prop.getProperty("Myinfosave_xpath"))).click();
 				
+				System.out.println("Dropdown values selected sucecssefully");
+				
 	}
 }
 

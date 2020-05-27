@@ -30,5 +30,19 @@
 	<classpathentry kind="lib" path="C:/Users/jaju_v/Downloads/org.testng.eclipse.updatesite/plugins/org.yaml.snakeyaml.source_1.21.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/jaju_v/Downloads/org.testng.eclipse.updatesite/plugins/org.yaml.snakeyaml_1.21.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/jaju_v/Downloads/testng-6.14.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jaju_v/Downloads/XlsReader-0.1.1/library/poi-3.7-20101029.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jaju_v/Downloads/XlsReader-0.1.1/library/poi-scratchpad-3.7-20101029.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jaju_v/Downloads/XlsReader-0.1.1/library/XlsReader.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jaju_v/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.jar" sourcepath="C:/Users/jaju_v/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.apache.poi"/>
+			<attribute name="maven.artifactId" value="poi-ooxml"/>
+			<attribute name="maven.version" value="4.1.2"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/jaju_v/Downloads/sikuli-api-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jaju_v/Downloads/htmlunit-driver-2.39.0-jar-with-dependencies.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

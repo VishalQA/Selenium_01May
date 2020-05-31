@@ -27,7 +27,7 @@ public class SeleniumCommands {
 		String pagesource = driver.getPageSource();
 		System.out.println("4. The value of the pagesource is --->"  +pagesource);
 		
-		WebElement dropdown = driver.findElement(By.xpath(xpathExpression))
+//		WebElement dropdown = driver.findElement(By.xpath(xpathExpression))
 		
 	
 		

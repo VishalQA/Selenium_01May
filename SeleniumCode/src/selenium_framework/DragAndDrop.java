@@ -14,8 +14,14 @@ public class DragAndDrop {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		
-		driver.get("https://jqueryui.com/droppable/");
-
+		
+		
+//		driver.get("https://jqueryui.com/droppable/");
+		driver.get("https://www.ndtv.com/");
+		
+		int size = driver.findElements(By.tagName("iframe")).size();
+		System.out.println(size);
+		
 		driver.switchTo().frame(0);
 		Actions action = new Actions(driver);
 		
